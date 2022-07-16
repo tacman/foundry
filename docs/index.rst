@@ -1463,7 +1463,7 @@ Miscellaneous
                time_cost: 3 # Lowest possible value for argon
                memory_cost: 10 # Lowest possible value for argon
 
-3. Pre-encode user passwords with a known value via ``bin/console security:encode-password`` and set this in
+3. Pre-encode user passwords with a known value via ``bin/console security:hash-password`` and set this in
    ``ModelFactory::getDefaults()``. Add the known value as a ``const`` on your factory:
 
    .. code-block:: php
