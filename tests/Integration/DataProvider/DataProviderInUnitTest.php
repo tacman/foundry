@@ -76,7 +76,7 @@ final class DataProviderInUnitTest extends TestCase
 
     public static function createObjectUsingFakerInDataProvider(): iterable
     {
-        yield 'object factory' => [Object1Factory::createOne(['prop1' => $prop1 = faker()->sentence()]), "$prop1-constructor"];
+        yield 'object factory' => [Object1Factory::createOne(['prop1' => $prop1 = faker()->sentence()]), "{$prop1}-constructor"];
         yield 'persistent factory' => [GenericEntityFactory::createOne(['prop1' => $prop1 = faker()->sentence()]), $prop1];
     }
 }

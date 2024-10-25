@@ -50,7 +50,7 @@ final class DataProviderForServiceFactoryInKernelTestCaseTest extends KernelTest
     {
         yield 'service factory' => [
             Object1Factory::createOne(['prop1' => $prop1 = faker()->sentence()]),
-            "$prop1-constructor"
+            "{$prop1}-constructor",
         ];
     }
 }
