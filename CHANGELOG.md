@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [v2.2.1](https://github.com/zenstruck/foundry/releases/tag/v2.2.1)
+
+October 31st, 2024 - [v2.2.0...v2.2.1](https://github.com/zenstruck/foundry/compare/v2.2.0...v2.2.1)
+
+* 496a7a8 fix: Change `RepositoryDecorator::inner()` visibility to public (#714) by @marienfressinaud
+* dfeb247 chore: test Foundry on PHP 8.4 & sf 7.2 (#709) by @nikophil
+* 2b12ef0 chore: simplify CI matrix (#708) by @nikophil
+
 ## [v2.2.0](https://github.com/zenstruck/foundry/releases/tag/v2.2.0)
 
 October 24th, 2024 - [v2.1.0...v2.2.0](https://github.com/zenstruck/foundry/compare/v2.1.0...v2.2.0)
