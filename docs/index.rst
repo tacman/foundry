@@ -1020,9 +1020,12 @@ If your factories require dependencies, you can define them as a service. The fo
 common use-case: encoding a password with the ``UserPasswordHasherInterface`` service.
 
 ::
-
     // src/Factory/UserFactory.php
+    namespace App\Factory;
+
+    use App\Entity\User;
     use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
+    use Zenstruck\Foundry\Persistence\PersistentProxyObjectFactory;
 
     final class UserFactory extends PersistentProxyObjectFactory
     {
